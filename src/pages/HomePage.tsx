@@ -41,7 +41,7 @@ const HomePage: React.FC = () => {
     },
     {
       title: 'Dream Journal',
-      description: 'Decode messages from your subconscious',
+      description: 'Record and decode messages from your subconscious',
       icon: '💭',
       path: '/journal',
       gradient: 'linear-gradient(135deg, var(--purple-lavender) 20%, var(--purple-deep) 80%)',

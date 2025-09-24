@@ -38,7 +38,7 @@ function App() {
         <nav className="navigation">
           <div className="nav-container">
             <NavLink to="/" className="nav-logo" style={{ textDecoration: 'none' }}>
-              Mystic Sanctuary
+              Astral Sanctuary
             </NavLink>
             <ul className="nav-links">
               <li>
@@ -58,7 +58,7 @@ function App() {
               </li>
               <li>
                 <NavLink to="/journal" className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}>
-                  Journal
+                  Dream Journal
                 </NavLink>
               </li>
               <li>
