@@ -13,10 +13,14 @@ const AdsterraAd: React.FC<AdsterraAdProps> = ({ type, style = {}, className = '
     if (!adRef.current) return;
 
     const loadAd = () => {
-      if (!adRef.current) return;
+      const currentRef = adRef.current;
+      if (!currentRef) return;
 
       // Clear previous content
-      adRef.current.innerHTML = '';
+      currentRef.innerHTML = '';
+
+      // Add unique container ID for each ad type
+      const containerId = `ad-container-${type}-${Date.now()}`;
 
       switch (type) {
         case 'banner300x250':
@@ -24,7 +28,7 @@ const AdsterraAd: React.FC<AdsterraAdProps> = ({ type, style = {}, className = '
           const script1 = document.createElement('script');
           script1.type = 'text/javascript';
           script1.innerHTML = `
-            atOptions = {
+            window.atOptions = {
               'key' : 'c976bef33560e7143188938465a83608',
               'format' : 'iframe',
               'height' : 250,
@@ -32,12 +36,13 @@ const AdsterraAd: React.FC<AdsterraAdProps> = ({ type, style = {}, className = '
               'params' : {}
             };
           `;
-          adRef.current.appendChild(script1);
+          currentRef.appendChild(script1);
 
           const invokeScript1 = document.createElement('script');
           invokeScript1.type = 'text/javascript';
           invokeScript1.src = '//www.highperformanceformat.com/c976bef33560e7143188938465a83608/invoke.js';
-          adRef.current.appendChild(invokeScript1);
+          invokeScript1.async = true;
+          currentRef.appendChild(invokeScript1);
           break;
 
         case 'banner728x90':
@@ -45,7 +50,7 @@ const AdsterraAd: React.FC<AdsterraAdProps> = ({ type, style = {}, className = '
           const script2 = document.createElement('script');
           script2.type = 'text/javascript';
           script2.innerHTML = `
-            atOptions = {
+            window.atOptions = {
               'key' : 'aa38e43b3aff27145399465766520d46',
               'format' : 'iframe',
               'height' : 90,
@@ -53,12 +58,13 @@ const AdsterraAd: React.FC<AdsterraAdProps> = ({ type, style = {}, className = '
               'params' : {}
             };
           `;
-          adRef.current.appendChild(script2);
+          currentRef.appendChild(script2);
 
           const invokeScript2 = document.createElement('script');
           invokeScript2.type = 'text/javascript';
           invokeScript2.src = '//www.highperformanceformat.com/aa38e43b3aff27145399465766520d46/invoke.js';
-          adRef.current.appendChild(invokeScript2);
+          invokeScript2.async = true;
+          currentRef.appendChild(invokeScript2);
           break;
 
         case 'nativeBanner':
@@ -66,31 +72,35 @@ const AdsterraAd: React.FC<AdsterraAdProps> = ({ type, style = {}, className = '
           const script3 = document.createElement('script');
           script3.type = 'text/javascript';
           script3.src = '//pl27721413.revenuecpmgate.com/aa/05/7e/aa057e36a9621fde8cc3126b5f44378a.js';
-          adRef.current.appendChild(script3);
+          script3.async = true;
+          currentRef.appendChild(script3);
           break;
 
         case 'inPagePush':
           // In-page Push
+          const div = document.createElement('div');
+          div.id = 'container-ce39cab98e37d54be02658758207101d';
+          currentRef.appendChild(div);
+
           const script4 = document.createElement('script');
           script4.async = true;
           script4.setAttribute('data-cfasync', 'false');
           script4.src = '//pl27721412.revenuecpmgate.com/ce39cab98e37d54be02658758207101d/invoke.js';
-          adRef.current.appendChild(script4);
-
-          const div = document.createElement('div');
-          div.id = 'container-ce39cab98e37d54be02658758207101d';
-          adRef.current.appendChild(div);
+          currentRef.appendChild(script4);
           break;
       }
+
+      console.log(`Ad loaded: ${type}`);
     };
 
     // Load ad after a short delay to ensure DOM is ready
-    const timer = setTimeout(loadAd, 100);
+    const timer = setTimeout(loadAd, 500);
 
     return () => {
       clearTimeout(timer);
-      if (adRef.current) {
-        adRef.current.innerHTML = '';
+      const currentRef = adRef.current;
+      if (currentRef) {
+        currentRef.innerHTML = '';
       }
     };
   }, [type]);
