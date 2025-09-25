@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import TarotSpread from '../components/TarotSpread';
 import SpreadSelector from '../components/SpreadSelector';
 import { SpreadType } from '../types/tarot';
+import AdsterraAd from '../components/AdsterraAds';
 
 const TarotPage: React.FC = () => {
   const [selectedSpread, setSelectedSpread] = useState<SpreadType>('three-card');
@@ -79,6 +80,9 @@ const TarotPage: React.FC = () => {
                 Begin Reading
               </button>
             </div>
+
+            {/* Adsterra Ad - 300x250 Rectangle */}
+            <AdsterraAd type="banner300x250" style={{ marginTop: '2rem' }} />
           </motion.div>
         ) : (
           <div style={{ position: 'relative' }}>
@@ -115,6 +119,9 @@ const TarotPage: React.FC = () => {
               deckStyle="rider-waite"
               question={question}
             />
+
+            {/* Adsterra Ad - In-page Push */}
+            <AdsterraAd type="inPagePush" style={{ marginTop: '2rem' }} />
           </div>
         )}
       </div>

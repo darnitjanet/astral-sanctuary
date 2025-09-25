@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
-import AdBanner from '../components/AdBanner';
+import AdsterraAd from '../components/AdsterraAds';
 
 const HomePage: React.FC = () => {
   const navigate = useNavigate();
@@ -174,8 +174,11 @@ const HomePage: React.FC = () => {
           ))}
         </div>
 
-        {/* Ad placement - Replace with your Adsterra ad key */}
-        <AdBanner adKey="YOUR_ADSTERRA_KEY_HERE" format="banner" width={728} height={90} />
+        {/* Adsterra Ad - 728x90 Leaderboard */}
+        <AdsterraAd type="banner728x90" />
+
+        {/* Adsterra Ad - Native Banner */}
+        <AdsterraAd type="nativeBanner" />
 
         {/* Mystical quote */}
         <motion.div
