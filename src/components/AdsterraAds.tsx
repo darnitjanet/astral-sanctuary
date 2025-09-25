@@ -77,9 +77,14 @@ const AdsterraAd: React.FC<AdsterraAdProps> = ({ type, style = {}, className = '
           break;
 
         case 'inPagePush':
-          // In-page Push
+          // In-page Push - Vertical sidebar format
           const div = document.createElement('div');
           div.id = 'container-ce39cab98e37d54be02658758207101d';
+          div.style.width = '160px';
+          div.style.height = '600px';
+          div.style.display = 'flex';
+          div.style.flexDirection = 'column';
+          div.style.overflow = 'hidden';
           currentRef.appendChild(div);
 
           const script4 = document.createElement('script');
@@ -136,8 +141,9 @@ const AdsterraAd: React.FC<AdsterraAdProps> = ({ type, style = {}, className = '
       case 'banner728x90':
         return { ...baseStyle, minHeight: '90px', minWidth: '728px', maxWidth: '100%' };
       case 'nativeBanner':
-      case 'inPagePush':
         return { ...baseStyle, minHeight: '50px' };
+      case 'inPagePush':
+        return { ...baseStyle, minHeight: '600px', minWidth: '160px', width: '160px', height: '600px' };
       default:
         return baseStyle;
     }

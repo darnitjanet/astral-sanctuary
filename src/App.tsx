@@ -79,10 +79,17 @@ function App() {
           right: '20px',
           top: '30%',
           transform: 'translateY(-30%)',
-          width: '300px',
+          width: '160px',
+          height: '600px',
           zIndex: 800
         }} className="sidebar-ad-right">
-          <AdsterraAd type="inPagePush" style={{ margin: 0 }} />
+          <AdsterraAd type="inPagePush" style={{
+            margin: 0,
+            width: '160px',
+            height: '600px',
+            minWidth: '160px',
+            minHeight: '600px'
+          }} />
         </div>
 
         {/* Main Content - Normal layout */}
