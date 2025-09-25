@@ -13,6 +13,7 @@ import LearnPage from './pages/LearnPage';
 import MoonPhaseWidget from './components/MoonPhaseWidget';
 import PlanetaryTicker from './components/PlanetaryTicker';
 import ParticleBackground from './components/ParticleBackground';
+import AdsterraAd from './components/AdsterraAds';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -72,16 +73,65 @@ function App() {
 
         <MoonPhaseWidget />
 
-        <AnimatePresence mode="wait">
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/tarot" element={<TarotPage />} />
-            <Route path="/birth-chart" element={<BirthChartPage />} />
-            <Route path="/daily-cosmos" element={<DailyCosmosPage />} />
-            <Route path="/journal" element={<JournalPage />} />
-            <Route path="/learn" element={<LearnPage />} />
-          </Routes>
-        </AnimatePresence>
+        {/* Top Banner Ad - 728x90 */}
+        <div style={{
+          position: 'sticky',
+          top: '70px',
+          zIndex: 900,
+          background: 'rgba(13, 13, 15, 0.95)',
+          padding: '10px 0',
+          borderBottom: '1px solid var(--purple-lavender)',
+          display: 'flex',
+          justifyContent: 'center'
+        }}>
+          <AdsterraAd type="banner728x90" style={{ margin: 0, background: 'transparent', border: 'none' }} />
+        </div>
+
+        <div style={{
+          display: 'flex',
+          maxWidth: '1600px',
+          margin: '0 auto',
+          position: 'relative'
+        }}>
+          {/* Left Sidebar Ad - 300x250 */}
+          <div style={{
+            position: 'sticky',
+            top: '180px',
+            height: 'fit-content',
+            width: '320px',
+            padding: '10px'
+          }} className="sidebar-ad-left">
+            <AdsterraAd type="banner300x250" style={{ margin: 0 }} />
+          </div>
+
+          {/* Main Content */}
+          <div style={{ flex: 1, minHeight: 'calc(100vh - 200px)' }}>
+            <AnimatePresence mode="wait">
+              <Routes>
+                <Route path="/" element={<HomePage />} />
+                <Route path="/tarot" element={<TarotPage />} />
+                <Route path="/birth-chart" element={<BirthChartPage />} />
+                <Route path="/daily-cosmos" element={<DailyCosmosPage />} />
+                <Route path="/journal" element={<JournalPage />} />
+                <Route path="/learn" element={<LearnPage />} />
+              </Routes>
+            </AnimatePresence>
+          </div>
+
+          {/* Right Sidebar Ad - 300x250 */}
+          <div style={{
+            position: 'sticky',
+            top: '180px',
+            height: 'fit-content',
+            width: '320px',
+            padding: '10px'
+          }} className="sidebar-ad-right">
+            <AdsterraAd type="nativeBanner" style={{ margin: 0 }} />
+            <div style={{ marginTop: '20px' }}>
+              <AdsterraAd type="banner300x250" style={{ margin: 0 }} />
+            </div>
+          </div>
+        </div>
 
         <PlanetaryTicker />
       </div>

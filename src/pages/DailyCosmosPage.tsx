@@ -4,7 +4,6 @@ import MoonPhaseCard from '../components/MoonPhaseCard';
 import PlanetaryTransits from '../components/PlanetaryTransits';
 import DailyAffirmation from '../components/DailyAffirmation';
 import { MoonPhase, Transit } from '../types/astrology';
-import AdsterraAd from '../components/AdsterraAds';
 
 const DailyCosmosPage: React.FC = () => {
   const [moonPhase, setMoonPhase] = useState<MoonPhase | null>(null);
@@ -91,9 +90,6 @@ const DailyCosmosPage: React.FC = () => {
           <DailyAffirmation />
         </div>
 
-        {/* Adsterra Ad - 728x90 Leaderboard */}
-        <AdsterraAd type="banner728x90" style={{ margin: '2rem auto' }} />
-
         <PlanetaryTransits transits={transits} />
 
         <motion.div
@@ -131,9 +127,6 @@ const DailyCosmosPage: React.FC = () => {
             Refresh Cosmos
           </button>
         </motion.div>
-
-        {/* Adsterra Ad - 300x250 Rectangle */}
-        <AdsterraAd type="banner300x250" style={{ marginTop: '2rem' }} />
       </div>
     </motion.div>
   );

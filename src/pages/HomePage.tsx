@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
-import AdsterraAd from '../components/AdsterraAds';
 
 const HomePage: React.FC = () => {
   const navigate = useNavigate();
@@ -174,12 +173,6 @@ const HomePage: React.FC = () => {
           ))}
         </div>
 
-        {/* Adsterra Ad - 728x90 Leaderboard - Top of content */}
-        <AdsterraAd type="banner728x90" style={{ marginTop: '3rem', marginBottom: '2rem' }} />
-
-        {/* Adsterra Ad - 300x250 Rectangle - Middle of content */}
-        <AdsterraAd type="banner300x250" style={{ margin: '2rem auto' }} />
-
         {/* Mystical quote */}
         <motion.div
           initial={{ opacity: 0 }}
@@ -211,9 +204,6 @@ const HomePage: React.FC = () => {
             — Rumi
           </p>
         </motion.div>
-
-        {/* Adsterra Ad - Native Banner - Bottom of page */}
-        <AdsterraAd type="nativeBanner" style={{ marginTop: '3rem', marginBottom: '2rem' }} />
       </div>
     </motion.div>
   );

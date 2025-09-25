@@ -63,3 +63,22 @@ h1, h2, h3, h4, h5, h6 {
     radial-gradient(circle at 80% 20%, rgba(16, 185, 129, 0.1) 0%, transparent 50%),
     radial-gradient(circle at 40% 40%, rgba(76, 29, 149, 0.05) 0%, transparent 50%);
 }
+
+/* Sidebar Ad Styles */
+.sidebar-ad-left,
+.sidebar-ad-right {
+  display: none !important;
+}
+
+@media (min-width: 1400px) {
+  .sidebar-ad-left,
+  .sidebar-ad-right {
+    display: block !important;
+  }
+}
+
+@media (max-width: 1399px) {
+  .container {
+    max-width: 100%;
+  }
+}
