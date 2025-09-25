@@ -64,39 +64,3 @@ h1, h2, h3, h4, h5, h6 {
     radial-gradient(circle at 40% 40%, rgba(76, 29, 149, 0.05) 0%, transparent 50%);
 }
 
-/* Sidebar Ad Styles */
-.sidebar-ad-left,
-.sidebar-ad-right {
-  display: none !important;
-}
-
-@media (min-width: 1400px) {
-  .sidebar-ad-left,
-  .sidebar-ad-right {
-    display: block !important;
-  }
-
-  /* Add padding to body to account for fixed sidebars */
-  body {
-    padding-left: 320px;
-    padding-right: 320px;
-  }
-}
-
-@media (max-width: 1399px) {
-  .container {
-    max-width: 100%;
-  }
-
-  body {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-/* Debug styles to see ad containers */
-.adsterra-ad {
-  min-height: 50px;
-  background: rgba(107, 70, 193, 0.1) !important;
-  border: 1px dashed rgba(107, 70, 193, 0.5) !important;
-}

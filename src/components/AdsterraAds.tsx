@@ -145,16 +145,6 @@ const AdsterraAd: React.FC<AdsterraAdProps> = ({ type, style = {}, className = '
 
   return (
     <div className={`adsterra-ad ${className}`} style={getAdStyle()}>
-      <div style={{
-        position: 'absolute',
-        top: '5px',
-        right: '5px',
-        fontSize: '10px',
-        color: 'rgba(255,255,255,0.3)',
-        zIndex: 1
-      }}>
-        Ad: {type}
-      </div>
       <div ref={adRef} />
     </div>
   );

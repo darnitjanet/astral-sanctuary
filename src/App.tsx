@@ -73,43 +73,6 @@ function App() {
 
         <MoonPhaseWidget />
 
-        {/* Top Banner Ad - 728x90 */}
-        <div style={{
-          position: 'sticky',
-          top: '70px',
-          zIndex: 900,
-          background: 'rgba(13, 13, 15, 0.95)',
-          padding: '10px 0',
-          borderBottom: '1px solid var(--purple-lavender)',
-          display: 'flex',
-          justifyContent: 'center'
-        }}>
-          <AdsterraAd type="banner728x90" style={{ margin: 0, background: 'transparent', border: 'none' }} />
-        </div>
-
-        {/* Left Sidebar Ad - Fixed position - Only show 728x90 banner here */}
-        <div style={{
-          position: 'fixed',
-          left: '20px',
-          top: '50%',
-          transform: 'translateY(-50%)',
-          width: '300px',
-          zIndex: 800
-        }} className="sidebar-ad-left">
-          <AdsterraAd type="banner728x90" style={{ margin: 0, width: '300px' }} />
-        </div>
-
-        {/* Right Sidebar Ad - Fixed position */}
-        <div style={{
-          position: 'fixed',
-          right: '20px',
-          top: '30%',
-          transform: 'translateY(-30%)',
-          width: '300px',
-          zIndex: 800
-        }} className="sidebar-ad-right">
-          <AdsterraAd type="nativeBanner" style={{ margin: 0 }} />
-        </div>
 
         {/* Main Content - Normal layout */}
         <div style={{ position: 'relative' }}>
