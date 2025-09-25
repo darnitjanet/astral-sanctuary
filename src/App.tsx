@@ -87,49 +87,51 @@ function App() {
           <AdsterraAd type="banner728x90" style={{ margin: 0, background: 'transparent', border: 'none' }} />
         </div>
 
+        {/* Left Sidebar Ad - Fixed position */}
         <div style={{
-          display: 'flex',
-          maxWidth: '1600px',
-          margin: '0 auto',
-          position: 'relative'
-        }}>
-          {/* Left Sidebar Ad - 300x250 */}
+          position: 'fixed',
+          left: '20px',
+          top: '50%',
+          transform: 'translateY(-50%)',
+          width: '300px',
+          zIndex: 800
+        }} className="sidebar-ad-left">
+          <AdsterraAd type="banner300x250" style={{ margin: 0 }} />
+        </div>
+
+        {/* Right Sidebar Ad - Fixed position */}
+        <div style={{
+          position: 'fixed',
+          right: '20px',
+          top: '30%',
+          transform: 'translateY(-30%)',
+          width: '300px',
+          zIndex: 800
+        }} className="sidebar-ad-right">
+          <AdsterraAd type="nativeBanner" style={{ margin: 0 }} />
+        </div>
+
+        {/* Main Content - Normal layout */}
+        <div style={{ position: 'relative' }}>
+          <AnimatePresence mode="wait">
+            <Routes>
+              <Route path="/" element={<HomePage />} />
+              <Route path="/tarot" element={<TarotPage />} />
+              <Route path="/birth-chart" element={<BirthChartPage />} />
+              <Route path="/daily-cosmos" element={<DailyCosmosPage />} />
+              <Route path="/journal" element={<JournalPage />} />
+              <Route path="/learn" element={<LearnPage />} />
+            </Routes>
+          </AnimatePresence>
+
+          {/* Bottom Ad - Working ad moved here */}
           <div style={{
-            position: 'sticky',
-            top: '180px',
-            height: 'fit-content',
-            width: '320px',
-            padding: '10px'
-          }} className="sidebar-ad-left">
+            display: 'flex',
+            justifyContent: 'center',
+            marginTop: '3rem',
+            marginBottom: '2rem'
+          }}>
             <AdsterraAd type="banner300x250" style={{ margin: 0 }} />
-          </div>
-
-          {/* Main Content */}
-          <div style={{ flex: 1, minHeight: 'calc(100vh - 200px)' }}>
-            <AnimatePresence mode="wait">
-              <Routes>
-                <Route path="/" element={<HomePage />} />
-                <Route path="/tarot" element={<TarotPage />} />
-                <Route path="/birth-chart" element={<BirthChartPage />} />
-                <Route path="/daily-cosmos" element={<DailyCosmosPage />} />
-                <Route path="/journal" element={<JournalPage />} />
-                <Route path="/learn" element={<LearnPage />} />
-              </Routes>
-            </AnimatePresence>
-          </div>
-
-          {/* Right Sidebar Ad - 300x250 */}
-          <div style={{
-            position: 'sticky',
-            top: '180px',
-            height: 'fit-content',
-            width: '320px',
-            padding: '10px'
-          }} className="sidebar-ad-right">
-            <AdsterraAd type="nativeBanner" style={{ margin: 0 }} />
-            <div style={{ marginTop: '20px' }}>
-              <AdsterraAd type="banner300x250" style={{ margin: 0 }} />
-            </div>
           </div>
         </div>
 

@@ -70,16 +70,27 @@ h1, h2, h3, h4, h5, h6 {
   display: none !important;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
   .sidebar-ad-left,
   .sidebar-ad-right {
     display: block !important;
   }
+
+  /* Add padding to body to account for fixed sidebars */
+  body {
+    padding-left: 320px;
+    padding-right: 320px;
+  }
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 1399px) {
   .container {
     max-width: 100%;
+  }
+
+  body {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
