@@ -90,7 +90,18 @@ const AdsterraAd: React.FC<AdsterraAdProps> = ({ type, style = {}, className = '
           break;
       }
 
-      console.log(`Ad loaded: ${type}`);
+      console.log(`Ad attempting to load: ${type}`);
+
+      // Add error handling for scripts
+      const scripts = currentRef.querySelectorAll('script');
+      scripts.forEach(script => {
+        script.addEventListener('error', () => {
+          console.error(`Failed to load ad script for ${type}`);
+        });
+        script.addEventListener('load', () => {
+          console.log(`Successfully loaded script for ${type}`);
+        });
+      });
     };
 
     // Load ad after a short delay to ensure DOM is ready
@@ -109,12 +120,13 @@ const AdsterraAd: React.FC<AdsterraAdProps> = ({ type, style = {}, className = '
     const baseStyle: React.CSSProperties = {
       margin: '1.5rem auto',
       padding: '0.5rem',
-      background: 'rgba(26, 26, 29, 0.3)',
+      background: 'rgba(26, 26, 29, 0.5)',
       borderRadius: '8px',
-      border: '1px solid rgba(180, 130, 255, 0.2)',
+      border: '1px solid rgba(180, 130, 255, 0.3)',
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
+      position: 'relative',
       ...style
     };
 
@@ -133,6 +145,16 @@ const AdsterraAd: React.FC<AdsterraAdProps> = ({ type, style = {}, className = '
 
   return (
     <div className={`adsterra-ad ${className}`} style={getAdStyle()}>
+      <div style={{
+        position: 'absolute',
+        top: '5px',
+        right: '5px',
+        fontSize: '10px',
+        color: 'rgba(255,255,255,0.3)',
+        zIndex: 1
+      }}>
+        Ad: {type}
+      </div>
       <div ref={adRef} />
     </div>
   );
