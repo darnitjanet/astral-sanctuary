@@ -73,6 +73,17 @@ function App() {
 
         <MoonPhaseWidget />
 
+        {/* Right Sidebar Ad - Fixed position */}
+        <div style={{
+          position: 'fixed',
+          right: '20px',
+          top: '30%',
+          transform: 'translateY(-30%)',
+          width: '300px',
+          zIndex: 800
+        }} className="sidebar-ad-right">
+          <AdsterraAd type="inPagePush" style={{ margin: 0 }} />
+        </div>
 
         {/* Main Content - Normal layout */}
         <div style={{ position: 'relative' }}>
