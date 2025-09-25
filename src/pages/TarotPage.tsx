@@ -120,8 +120,8 @@ const TarotPage: React.FC = () => {
               question={question}
             />
 
-            {/* Adsterra Ad - In-page Push */}
-            <AdsterraAd type="inPagePush" style={{ marginTop: '2rem' }} />
+            {/* Adsterra Ad - 728x90 Leaderboard */}
+            <AdsterraAd type="banner728x90" style={{ marginTop: '2rem' }} />
           </div>
         )}
       </div>

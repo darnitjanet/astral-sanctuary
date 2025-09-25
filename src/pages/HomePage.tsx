@@ -174,11 +174,11 @@ const HomePage: React.FC = () => {
           ))}
         </div>
 
-        {/* Adsterra Ad - 728x90 Leaderboard */}
-        <AdsterraAd type="banner728x90" />
+        {/* Adsterra Ad - 728x90 Leaderboard - Top of content */}
+        <AdsterraAd type="banner728x90" style={{ marginTop: '3rem', marginBottom: '2rem' }} />
 
-        {/* Adsterra Ad - Native Banner */}
-        <AdsterraAd type="nativeBanner" />
+        {/* Adsterra Ad - 300x250 Rectangle - Middle of content */}
+        <AdsterraAd type="banner300x250" style={{ margin: '2rem auto' }} />
 
         {/* Mystical quote */}
         <motion.div
@@ -211,6 +211,9 @@ const HomePage: React.FC = () => {
             — Rumi
           </p>
         </motion.div>
+
+        {/* Adsterra Ad - Native Banner - Bottom of page */}
+        <AdsterraAd type="nativeBanner" style={{ marginTop: '3rem', marginBottom: '2rem' }} />
       </div>
     </motion.div>
   );
