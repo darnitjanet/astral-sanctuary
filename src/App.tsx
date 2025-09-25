@@ -73,6 +73,20 @@ function App() {
 
         <MoonPhaseWidget />
 
+        {/* Top Banner Ad - 728x90 */}
+        <div style={{
+          position: 'sticky',
+          top: '70px',
+          zIndex: 900,
+          background: 'rgba(13, 13, 15, 0.95)',
+          padding: '10px 0',
+          borderBottom: '1px solid var(--purple-lavender)',
+          display: 'flex',
+          justifyContent: 'center'
+        }}>
+          <AdsterraAd type="banner728x90" style={{ margin: 0, background: 'transparent', border: 'none' }} />
+        </div>
+
 
         {/* Main Content - Normal layout */}
         <div style={{ position: 'relative' }}>
