@@ -10,6 +10,8 @@ import BirthChartPage from './pages/BirthChartPage';
 import DailyCosmosPage from './pages/DailyCosmosPage';
 import JournalPage from './pages/JournalPage';
 import LearnPage from './pages/LearnPage';
+import BlogPage from './pages/BlogPage';
+import BlogPostPage from './pages/BlogPostPage';
 import MoonPhaseWidget from './components/MoonPhaseWidget';
 import PlanetaryTicker from './components/PlanetaryTicker';
 import ParticleBackground from './components/ParticleBackground';
@@ -67,6 +69,11 @@ function App() {
                   Learn
                 </NavLink>
               </li>
+              <li>
+                <NavLink to="/blog" className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}>
+                  Blog
+                </NavLink>
+              </li>
             </ul>
           </div>
         </nav>
@@ -98,6 +105,8 @@ function App() {
               <Route path="/daily-cosmos" element={<DailyCosmosPage />} />
               <Route path="/journal" element={<JournalPage />} />
               <Route path="/learn" element={<LearnPage />} />
+              <Route path="/blog" element={<BlogPage />} />
+              <Route path="/blog/:slug" element={<BlogPostPage />} />
             </Routes>
           </AnimatePresence>
 

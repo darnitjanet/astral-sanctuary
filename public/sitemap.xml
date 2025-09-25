@@ -60,4 +60,34 @@
     <priority>0.6</priority>
   </url>
 
+  <!-- Blog Page -->
+  <url>
+    <loc>https://astralsanctuary.com/blog</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog Posts -->
+  <url>
+    <loc>https://astralsanctuary.com/blog/free-tarot-card-meanings-guide</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://astralsanctuary.com/blog/birth-chart-calculator-explained</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://astralsanctuary.com/blog/mercury-retrograde-2025-dates</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
 </urlset>
