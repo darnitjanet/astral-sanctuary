@@ -87,7 +87,7 @@ function App() {
           <AdsterraAd type="banner728x90" style={{ margin: 0, background: 'transparent', border: 'none' }} />
         </div>
 
-        {/* Left Sidebar Ad - Fixed position */}
+        {/* Left Sidebar Ad - Fixed position - Only show 728x90 banner here */}
         <div style={{
           position: 'fixed',
           left: '20px',
@@ -96,7 +96,7 @@ function App() {
           width: '300px',
           zIndex: 800
         }} className="sidebar-ad-left">
-          <AdsterraAd type="banner300x250" style={{ margin: 0 }} />
+          <AdsterraAd type="banner728x90" style={{ margin: 0, width: '300px' }} />
         </div>
 
         {/* Right Sidebar Ad - Fixed position */}
