@@ -87,20 +87,15 @@ function App() {
             </Routes>
           </AnimatePresence>
 
-          {/* Bottom Ads - Multiple horizontal ads stacked */}
+          {/* Bottom Ad - Single horizontal ad */}
           <div style={{
             display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            gap: '2rem',
+            justifyContent: 'center',
             marginTop: '3rem',
             marginBottom: '2rem'
           }}>
-            {/* First horizontal ad - the working one */}
-            <AdsterraAd type="banner300x250" style={{ margin: 0 }} />
-
-            {/* Second horizontal ad - the 4x1 format one */}
-            <AdsterraAd type="inPagePush" style={{ margin: 0, width: 'auto', height: 'auto' }} />
+            {/* Horizontal 4x1 ad */}
+            <AdsterraAd type="inPagePush" style={{ margin: 0 }} />
           </div>
         </div>
 
