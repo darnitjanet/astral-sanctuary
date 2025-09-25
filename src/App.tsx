@@ -73,24 +73,6 @@ function App() {
 
         <MoonPhaseWidget />
 
-        {/* Right Sidebar Ad - Fixed position */}
-        <div style={{
-          position: 'fixed',
-          right: '20px',
-          top: '30%',
-          transform: 'translateY(-30%)',
-          width: '160px',
-          height: '600px',
-          zIndex: 800
-        }} className="sidebar-ad-right">
-          <AdsterraAd type="inPagePush" style={{
-            margin: 0,
-            width: '160px',
-            height: '600px',
-            minWidth: '160px',
-            minHeight: '600px'
-          }} />
-        </div>
 
         {/* Main Content - Normal layout */}
         <div style={{ position: 'relative' }}>
@@ -105,14 +87,20 @@ function App() {
             </Routes>
           </AnimatePresence>
 
-          {/* Bottom Ad - Working ad moved here */}
+          {/* Bottom Ads - Multiple horizontal ads stacked */}
           <div style={{
             display: 'flex',
-            justifyContent: 'center',
+            flexDirection: 'column',
+            alignItems: 'center',
+            gap: '2rem',
             marginTop: '3rem',
             marginBottom: '2rem'
           }}>
+            {/* First horizontal ad - the working one */}
             <AdsterraAd type="banner300x250" style={{ margin: 0 }} />
+
+            {/* Second horizontal ad - the 4x1 format one */}
+            <AdsterraAd type="inPagePush" style={{ margin: 0, width: 'auto', height: 'auto' }} />
           </div>
         </div>
 

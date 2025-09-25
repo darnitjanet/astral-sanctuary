@@ -64,14 +64,4 @@ h1, h2, h3, h4, h5, h6 {
     radial-gradient(circle at 40% 40%, rgba(76, 29, 149, 0.05) 0%, transparent 50%);
 }
 
-/* Sidebar Ad Styles */
-.sidebar-ad-right {
-  display: none !important;
-}
-
-@media (min-width: 1200px) {
-  .sidebar-ad-right {
-    display: block !important;
-  }
-}
 
