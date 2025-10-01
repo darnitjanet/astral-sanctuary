@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { interpretDream, interpretDreamWithOpenAI } from '../services/dreamInterpretation';
+import SymbolSuggestion from './SymbolSuggestion';
 
 interface DreamEntry {
   content: string;
@@ -21,6 +22,7 @@ const DreamLogger: React.FC = () => {
   const [symbolInput, setSymbolInput] = useState('');
   const [isAnalyzing, setIsAnalyzing] = useState(false);
   const [showAnalysis, setShowAnalysis] = useState(false);
+  const [showSymbolSuggestion, setShowSymbolSuggestion] = useState(false);
 
   const dreamMoods = [
     { value: 'peaceful', label: '😌 Peaceful', color: '#86EFAC' },
@@ -29,6 +31,12 @@ const DreamLogger: React.FC = () => {
     { value: 'anxious', label: '😰 Anxious', color: '#FCA5A5' },
     { value: 'joyful', label: '😊 Joyful', color: '#FDE047' },
     { value: 'dark', label: '🌑 Dark', color: '#64748B' },
+    { value: 'scary', label: '😱 Scary', color: '#EF4444' },
+    { value: 'sad', label: '😢 Sad', color: '#60A5FA' },
+    { value: 'romantic', label: '💕 Romantic', color: '#F472B6' },
+    { value: 'adventurous', label: '🏔️ Adventurous', color: '#34D399' },
+    { value: 'confusing', label: '🤔 Confusing', color: '#94A3B8' },
+    { value: 'surreal', label: '🌀 Surreal', color: '#C084FC' },
     { value: 'neutral', label: '😐 Neutral', color: '#9CA3AF' }
   ];
 
@@ -81,6 +89,18 @@ const DreamLogger: React.FC = () => {
     } finally {
       setIsAnalyzing(false);
     }
+  };
+
+  const handleClearForm = () => {
+    setDreamData({
+      content: '',
+      mood: 'neutral',
+      symbols: [],
+      lucid: false,
+      interpretation: ''
+    });
+    setSymbolInput('');
+    setShowAnalysis(false);
   };
 
   return (
@@ -190,8 +210,16 @@ const DreamLogger: React.FC = () => {
             marginBottom: '0.5rem',
             fontWeight: 'bold'
           }}>
-            Dream Symbols:
+            Additional Symbols (Optional):
           </label>
+          <p style={{
+            color: 'var(--text-secondary)',
+            fontSize: '0.85rem',
+            marginBottom: '0.5rem',
+            marginTop: '-0.25rem'
+          }}>
+            Symbols are auto-detected from your dream. Add more if needed.
+          </p>
           <div style={{
             display: 'flex',
             gap: '0.5rem',
@@ -288,7 +316,13 @@ const DreamLogger: React.FC = () => {
       </div>
 
       {/* Analyze Button */}
-      <div style={{ textAlign: 'center', marginBottom: '1.5rem' }}>
+      <div style={{
+        display: 'flex',
+        gap: '1rem',
+        justifyContent: 'center',
+        alignItems: 'center',
+        marginBottom: '1.5rem'
+      }}>
         <motion.button
           className="glow-button"
           onClick={generateDreamInterpretation}
@@ -316,6 +350,26 @@ const DreamLogger: React.FC = () => {
               Interpret My Dream
             </>
           )}
+        </motion.button>
+
+        <motion.button
+          onClick={handleClearForm}
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          style={{
+            padding: '1rem 2rem',
+            fontSize: '1.1rem',
+            borderRadius: '8px',
+            border: '2px solid var(--purple-lavender)',
+            background: 'transparent',
+            color: 'var(--purple-lavender)',
+            cursor: 'pointer',
+            fontWeight: 'bold',
+            transition: 'all 0.3s ease'
+          }}
+        >
+          <span style={{ marginRight: '0.5rem' }}>🗑️</span>
+          Clear
         </motion.button>
       </div>
 
@@ -438,6 +492,44 @@ const DreamLogger: React.FC = () => {
       }}>
         💫 Dream interpretations are insights for reflection, not definitive answers
       </div>
+
+      <div style={{
+        textAlign: 'center',
+        marginTop: '1rem',
+        paddingTop: '1rem',
+        borderTop: '1px solid rgba(167, 139, 250, 0.2)'
+      }}>
+        <button
+          onClick={() => setShowSymbolSuggestion(true)}
+          style={{
+            padding: '0.75rem 1.5rem',
+            borderRadius: '8px',
+            border: '1px solid var(--green-sage)',
+            background: 'rgba(134, 239, 172, 0.1)',
+            color: 'var(--green-sage)',
+            cursor: 'pointer',
+            fontSize: '0.9rem',
+            fontWeight: 'bold',
+            transition: 'all 0.3s ease'
+          }}
+        >
+          🌟 Contribute a New Symbol
+        </button>
+        <p style={{
+          color: 'var(--text-secondary)',
+          fontSize: '0.8rem',
+          marginTop: '0.5rem'
+        }}>
+          Help expand our dream symbol library for the community
+        </p>
+      </div>
+
+      {/* Symbol Suggestion Modal */}
+      <AnimatePresence>
+        {showSymbolSuggestion && (
+          <SymbolSuggestion onClose={() => setShowSymbolSuggestion(false)} />
+        )}
+      </AnimatePresence>
     </motion.div>
   );
 };

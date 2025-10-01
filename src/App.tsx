@@ -12,6 +12,7 @@ import JournalPage from './pages/JournalPage';
 import LearnPage from './pages/LearnPage';
 import BlogPage from './pages/BlogPage';
 import BlogPostPage from './pages/BlogPostPage';
+import AdminPanel from './components/AdminPanel';
 import MoonPhaseWidget from './components/MoonPhaseWidget';
 import PlanetaryTicker from './components/PlanetaryTicker';
 import ParticleBackground from './components/ParticleBackground';
@@ -107,6 +108,7 @@ function App() {
               <Route path="/learn" element={<LearnPage />} />
               <Route path="/blog" element={<BlogPage />} />
               <Route path="/blog/:slug" element={<BlogPostPage />} />
+              <Route path="/admin" element={<AdminPanel />} />
             </Routes>
           </AnimatePresence>
 
