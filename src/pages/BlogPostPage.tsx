@@ -133,9 +133,10 @@ const BlogPostPage: React.FC = () => {
                 </div>
                 <div style={{
                   display: 'flex',
+                  flexWrap: 'wrap',
                   gap: '0.5rem'
                 }}>
-                  {post.tags.slice(0, 3).map((tag, index) => (
+                  {post.tags.map((tag, index) => (
                     <span
                       key={index}
                       style={{

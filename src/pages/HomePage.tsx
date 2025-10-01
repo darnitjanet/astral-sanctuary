@@ -74,16 +74,75 @@ const HomePage: React.FC = () => {
           >
             Welcome to the Astral Sanctuary
           </motion.h1>
-          <motion.p
-            className="page-subtitle"
-            style={{ fontSize: '1.4rem', maxWidth: '800px', margin: '0 auto' }}
+          <motion.div
+            style={{ maxWidth: '900px', margin: '0 auto' }}
             initial={{ y: 30, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.4 }}
           >
-            Your celestial space for divination, cosmic wisdom, and spiritual discovery.
-            Choose your path to enlightenment.
-          </motion.p>
+            <h2 style={{ color: 'var(--text-primary)', marginBottom: '1rem', fontSize: '2rem' }}>
+              Your Celestial Space for Divination & Mystical Discovery
+            </h2>
+            <p style={{
+              color: 'var(--text-secondary)',
+              fontSize: '1.1rem',
+              lineHeight: 1.7,
+              marginBottom: '1.5rem'
+            }}>
+              Astral Sanctuary offers completely free spiritual tools and guidance for seekers on their mystical journey. Whether you're new to tarot and astrology or an experienced practitioner, our platform provides accurate, insightful divination experiences for discovering your spiritual path.
+            </p>
+            <div style={{
+              display: 'flex',
+              flexWrap: 'wrap',
+              justifyContent: 'center',
+              gap: '1rem',
+              marginBottom: '1.5rem'
+            }}>
+              <span style={{
+                background: 'var(--purple-deep)',
+                color: 'white',
+                padding: '0.5rem 1rem',
+                borderRadius: '20px',
+                fontSize: '0.9rem'
+              }}>
+                ✨ 100% Free Forever
+              </span>
+              <span style={{
+                background: 'var(--green-forest)',
+                color: 'white',
+                padding: '0.5rem 1rem',
+                borderRadius: '20px',
+                fontSize: '0.9rem'
+              }}>
+                🌙 Daily Updates
+              </span>
+              <span style={{
+                background: 'var(--gold-accent)',
+                color: 'black',
+                padding: '0.5rem 1rem',
+                borderRadius: '20px',
+                fontSize: '0.9rem'
+              }}>
+                🔮 Authentic Readings
+              </span>
+              <span style={{
+                background: 'var(--green-emerald)',
+                color: 'white',
+                padding: '0.5rem 1rem',
+                borderRadius: '20px',
+                fontSize: '0.9rem'
+              }}>
+                🚫 No Account Required
+              </span>
+            </div>
+            <p style={{
+              color: 'var(--purple-lavender)',
+              fontSize: '1.3rem',
+              fontWeight: 'bold'
+            }}>
+              Choose your path to enlightenment.
+            </p>
+          </motion.div>
         </div>
 
         <div style={{
@@ -266,62 +325,6 @@ const HomePage: React.FC = () => {
             </div>
           </div>
 
-          <div style={{
-            marginTop: '3rem',
-            textAlign: 'center',
-            background: 'rgba(76, 29, 149, 0.1)',
-            padding: '2rem',
-            borderRadius: '12px',
-            border: '1px solid var(--purple-deep)'
-          }}>
-            <h2 style={{ color: 'var(--text-primary)', marginBottom: '1rem', fontSize: '2rem' }}>
-              Your Sacred Space for Divination & Mystical Discovery
-            </h2>
-            <p style={{
-              color: 'var(--text-secondary)',
-              fontSize: '1.1rem',
-              lineHeight: 1.7,
-              maxWidth: '800px',
-              margin: '0 auto'
-            }}>
-              Astral Sanctuary offers completely free spiritual tools and guidance for seekers on their mystical journey. Whether you're new to tarot and astrology or an experienced practitioner, our platform provides accurate, insightful divination experiences. Join thousands of users discovering their spiritual path through our sacred digital sanctuary.
-            </p>
-            <div style={{
-              marginTop: '2rem',
-              display: 'flex',
-              flexWrap: 'wrap',
-              justifyContent: 'center',
-              gap: '1rem'
-            }}>
-              <span style={{
-                background: 'var(--purple-deep)',
-                color: 'white',
-                padding: '0.5rem 1rem',
-                borderRadius: '20px',
-                fontSize: '0.9rem'
-              }}>
-                ✨ 100% Free Forever
-              </span>
-              <span style={{
-                background: 'var(--green-forest)',
-                color: 'white',
-                padding: '0.5rem 1rem',
-                borderRadius: '20px',
-                fontSize: '0.9rem'
-              }}>
-                🌙 Daily Updates
-              </span>
-              <span style={{
-                background: 'var(--gold-accent)',
-                color: 'black',
-                padding: '0.5rem 1rem',
-                borderRadius: '20px',
-                fontSize: '0.9rem'
-              }}>
-                🔮 Authentic Readings
-              </span>
-            </div>
-          </div>
         </motion.section>
       </div>
     </motion.div>
