@@ -9,6 +9,19 @@
       }
     }
   ],
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "astralsanctuary.com"
+        }
+      ],
+      "destination": "https://www.astralsanctuary.com/:path*",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     {
       "source": "/(.*)",
