@@ -31,7 +31,6 @@ const BlogPostPage: React.FC = () => {
         title={post.title}
         description={post.metaDescription}
         canonical={`/blog/${post.slug}`}
-        keywords={post.metaKeywords}
         type="article"
       />
       <motion.div
