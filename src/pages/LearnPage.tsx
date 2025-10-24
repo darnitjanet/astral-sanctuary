@@ -5,6 +5,7 @@ import TarotGuide from '../components/TarotGuide';
 import AstrologyGuide from '../components/AstrologyGuide';
 import CrystalGuide from '../components/CrystalGuide';
 import NumerologyCalculator from '../components/NumerologyCalculator';
+import SEO from '../components/SEO';
 
 const LearnPage: React.FC = () => {
   const [activeSection, setActiveSection] = useState<'tarot' | 'astrology' | 'crystals' | 'numerology'>('tarot');
@@ -26,17 +27,24 @@ const LearnPage: React.FC = () => {
   ];
 
   return (
-    <motion.div
-      className="page-container"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-    >
-      <div className="container">
-        <div className="page-header">
-          <h1 className="page-title">Mystical Learning</h1>
-          <p className="page-subtitle">Deepen your spiritual knowledge</p>
-        </div>
+    <>
+      <SEO
+        title="Mystical Learning"
+        description="Learn about tarot card meanings, astrology, crystal healing, and numerology. Free guides and calculators for spiritual growth and mystical knowledge."
+        canonical="/learn"
+        keywords="tarot card meanings, astrology guide, crystal healing, numerology calculator, spiritual learning, mystical knowledge, tarot meanings"
+      />
+      <motion.div
+        className="page-container"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+      >
+        <div className="container">
+          <div className="page-header">
+            <h1 className="page-title">Mystical Learning</h1>
+            <p className="page-subtitle">Deepen your spiritual knowledge</p>
+          </div>
 
         <div style={{
           display: 'flex',
@@ -81,6 +89,7 @@ const LearnPage: React.FC = () => {
         </motion.div>
       </div>
     </motion.div>
+    </>
   );
 };
 

@@ -2,22 +2,30 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import { blogPosts } from '../data/blogPosts';
+import SEO from '../components/SEO';
 
 const BlogPage: React.FC = () => {
   const navigate = useNavigate();
 
   return (
-    <motion.div
-      className="page-container"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-    >
-      <div className="container">
-        <div className="page-header">
-          <h1 className="page-title">Mystical Blog</h1>
-          <p className="page-subtitle">Spiritual insights, guides, and cosmic wisdom</p>
-        </div>
+    <>
+      <SEO
+        title="Mystical Blog"
+        description="Explore spiritual insights, astrology guides, tarot wisdom, and cosmic knowledge. Read about full moon rituals, mercury retrograde, and more mystical topics."
+        canonical="/blog"
+        keywords="astrology blog, tarot blog, spiritual blog, mystical insights, mercury retrograde, full moon rituals, tarot meanings"
+      />
+      <motion.div
+        className="page-container"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+      >
+        <div className="container">
+          <div className="page-header">
+            <h1 className="page-title">Mystical Blog</h1>
+            <p className="page-subtitle">Spiritual insights, guides, and cosmic wisdom</p>
+          </div>
 
         <div style={{
           display: 'grid',
@@ -171,6 +179,7 @@ const BlogPage: React.FC = () => {
         </motion.section>
       </div>
     </motion.div>
+    </>
   );
 };
 

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import JournalEntry from '../components/JournalEntry';
 import DreamLogger from '../components/DreamLogger';
+import SEO from '../components/SEO';
 
 interface Journal {
   id: string;
@@ -59,17 +60,24 @@ const JournalPage: React.FC = () => {
   };
 
   return (
-    <motion.div
-      className="page-container"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-    >
-      <div className="container">
-        <div className="page-header">
-          <h1 className="page-title">Dream Journal</h1>
-          <p className="page-subtitle">Decode messages from your subconscious</p>
-        </div>
+    <>
+      <SEO
+        title="Dream Journal"
+        description="Record and interpret your dreams with our free dream journal. Track dream symbols, moon phases, and uncover messages from your subconscious mind."
+        canonical="/journal"
+        keywords="dream journal, dream interpretation, dream symbols, dream diary, dream meanings, lucid dreaming journal"
+      />
+      <motion.div
+        className="page-container"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+      >
+        <div className="container">
+          <div className="page-header">
+            <h1 className="page-title">Dream Journal</h1>
+            <p className="page-subtitle">Decode messages from your subconscious</p>
+          </div>
 
         <div style={{ marginBottom: '2rem' }}>
           <div style={{
@@ -203,6 +211,7 @@ const JournalPage: React.FC = () => {
         )}
       </div>
     </motion.div>
+    </>
   );
 };
 

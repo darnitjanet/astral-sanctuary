@@ -4,6 +4,7 @@ import MoonPhaseCard from '../components/MoonPhaseCard';
 import PlanetaryTransits from '../components/PlanetaryTransits';
 import DailyAffirmation from '../components/DailyAffirmation';
 import { MoonPhase, Transit } from '../types/astrology';
+import SEO from '../components/SEO';
 
 const DailyCosmosPage: React.FC = () => {
   const [moonPhase, setMoonPhase] = useState<MoonPhase | null>(null);
@@ -68,15 +69,22 @@ const DailyCosmosPage: React.FC = () => {
   }
 
   return (
-    <motion.div
-      className="page-container"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-    >
-      <div className="container">
-        <div className="page-header">
-          <h1 className="page-title">Daily Cosmos</h1>
+    <>
+      <SEO
+        title="Daily Cosmos"
+        description="Get your daily cosmic forecast with current moon phases, planetary transits, and spiritual guidance. Free daily horoscope and astrology insights."
+        canonical="/daily-cosmos"
+        keywords="daily horoscope, moon phase today, planetary transits, daily astrology, cosmic forecast, daily affirmation"
+      />
+      <motion.div
+        className="page-container"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+      >
+        <div className="container">
+          <div className="page-header">
+            <h1 className="page-title">Daily Cosmos</h1>
           <p className="page-subtitle">Today's celestial energies</p>
         </div>
 
@@ -129,6 +137,7 @@ const DailyCosmosPage: React.FC = () => {
         </motion.div>
       </div>
     </motion.div>
+    </>
   );
 };
 

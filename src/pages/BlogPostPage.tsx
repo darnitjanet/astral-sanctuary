@@ -1,27 +1,15 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import ReactMarkdown from 'react-markdown';
 import { getBlogPostBySlug, getRecentBlogPosts } from '../data/blogPosts';
+import SEO from '../components/SEO';
 
 const BlogPostPage: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
   const navigate = useNavigate();
   const post = slug ? getBlogPostBySlug(slug) : undefined;
   const recentPosts = getRecentBlogPosts(3).filter(p => p.slug !== slug);
-
-  useEffect(() => {
-    if (post) {
-      // Update page title for SEO
-      document.title = `${post.title} | Astral Sanctuary`;
-
-      // Update meta description
-      const metaDescription = document.querySelector('meta[name="description"]');
-      if (metaDescription) {
-        metaDescription.setAttribute('content', post.metaDescription);
-      }
-    }
-  }, [post]);
 
   if (!post) {
     return (
@@ -38,13 +26,21 @@ const BlogPostPage: React.FC = () => {
   }
 
   return (
-    <motion.div
-      className="page-container"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-    >
-      <div className="container" style={{ maxWidth: '900px', margin: '0 auto' }}>
+    <>
+      <SEO
+        title={post.title}
+        description={post.metaDescription}
+        canonical={`/blog/${post.slug}`}
+        keywords={post.metaKeywords}
+        type="article"
+      />
+      <motion.div
+        className="page-container"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+      >
+        <div className="container" style={{ maxWidth: '900px', margin: '0 auto' }}>
         {/* Breadcrumb Navigation */}
         <nav style={{
           marginBottom: '2rem',
@@ -454,6 +450,7 @@ const BlogPostPage: React.FC = () => {
         </div>
       </div>
     </motion.div>
+    </>
   );
 };
 

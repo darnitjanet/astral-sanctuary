@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import TarotSpread from '../components/TarotSpread';
 import SpreadSelector from '../components/SpreadSelector';
 import { SpreadType } from '../types/tarot';
+import SEO from '../components/SEO';
 
 const TarotPage: React.FC = () => {
   const [selectedSpread, setSelectedSpread] = useState<SpreadType>('three-card');
@@ -19,17 +20,24 @@ const TarotPage: React.FC = () => {
   };
 
   return (
-    <motion.div
-      className="page-container"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-    >
-      <div className="container">
-        <div className="page-header">
-          <h1 className="page-title">Tarot Reading</h1>
-          <p className="page-subtitle">Seek wisdom from the ancient cards</p>
-        </div>
+    <>
+      <SEO
+        title="Free Tarot Reading"
+        description="Get a free online tarot card reading. Choose from multiple spreads including three-card, Celtic Cross, and more. Seek guidance from the ancient tarot cards."
+        canonical="/tarot"
+        keywords="free tarot reading, tarot cards online, tarot spread, celtic cross tarot, three card tarot, online tarot reading"
+      />
+      <motion.div
+        className="page-container"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+      >
+        <div className="container">
+          <div className="page-header">
+            <h1 className="page-title">Tarot Reading</h1>
+            <p className="page-subtitle">Seek wisdom from the ancient cards</p>
+          </div>
 
         {!showReading ? (
           <motion.div
@@ -119,6 +127,7 @@ const TarotPage: React.FC = () => {
         )}
       </div>
     </motion.div>
+    </>
   );
 };
 

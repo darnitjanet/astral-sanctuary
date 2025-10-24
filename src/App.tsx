@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, NavLink } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
+import { HelmetProvider } from 'react-helmet-async';
 import './App.css';
 import './styles/components.css';
 
@@ -34,8 +35,9 @@ function App() {
   }
 
   return (
-    <Router>
-      <div className="App">
+    <HelmetProvider>
+      <Router>
+        <div className="App">
         <ParticleBackground />
         <div className="mystical-bg" />
 
@@ -125,8 +127,9 @@ function App() {
         </div>
 
         <PlanetaryTicker />
-      </div>
-    </Router>
+        </div>
+      </Router>
+    </HelmetProvider>
   );
 }
 
