@@ -34,7 +34,7 @@ const PrivacyPolicyPage: React.FC = () => {
             <section style={{ marginBottom: '2rem' }}>
               <h2 style={{ color: 'var(--gold-accent)', marginBottom: '1rem' }}>Introduction</h2>
               <p>
-                Welcome to Astral Sanctuary ("we," "our," or "us"). We respect your privacy and are committed to protecting your personal data. This privacy policy explains how we collect, use, disclose, and safeguard your information when you visit our website www.astralsanctuary.live.
+                Welcome to Astral Sanctuary ("we," "our," or "us"). We respect your privacy and are committed to protecting your personal data. This privacy policy explains how we collect, use, disclose, and safeguard your information when you visit our website https://www.astralsanctuary.com.
               </p>
             </section>
 
@@ -225,7 +225,7 @@ const PrivacyPolicyPage: React.FC = () => {
                 If you have any questions about this Privacy Policy, please contact us:
               </p>
               <ul style={{ listStyle: 'none', marginLeft: '0', marginTop: '1rem' }}>
-                <li><strong>Website:</strong> www.astralsanctuary.live</li>
+                <li><strong>Website:</strong> https://www.astralsanctuary.com</li>
                 <li><strong>By visiting this page:</strong> <a href="/contact" style={{ color: 'var(--purple-lavender)' }}>Contact Form</a></li>
               </ul>
             </section>

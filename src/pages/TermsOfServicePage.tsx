@@ -34,7 +34,7 @@ const TermsOfServicePage: React.FC = () => {
             <section style={{ marginBottom: '2rem' }}>
               <h2 style={{ color: 'var(--gold-accent)', marginBottom: '1rem' }}>Agreement to Terms</h2>
               <p>
-                Welcome to Astral Sanctuary. These Terms of Service ("Terms") govern your access to and use of our website located at www.astralsanctuary.live (the "Website"). By accessing or using our Website, you agree to be bound by these Terms. If you disagree with any part of these Terms, you may not access the Website.
+                Welcome to Astral Sanctuary. These Terms of Service ("Terms") govern your access to and use of our website located at https://www.astralsanctuary.com (the "Website"). By accessing or using our Website, you agree to be bound by these Terms. If you disagree with any part of these Terms, you may not access the Website.
               </p>
             </section>
 
@@ -249,7 +249,7 @@ const TermsOfServicePage: React.FC = () => {
                 If you have any questions about these Terms of Service, please contact us:
               </p>
               <ul style={{ listStyle: 'none', marginLeft: '0', marginTop: '1rem' }}>
-                <li><strong>Website:</strong> www.astralsanctuary.live</li>
+                <li><strong>Website:</strong> https://www.astralsanctuary.com</li>
                 <li><strong>By visiting this page:</strong> <a href="/contact" style={{ color: 'var(--purple-lavender)' }}>Contact Form</a></li>
               </ul>
             </section>
