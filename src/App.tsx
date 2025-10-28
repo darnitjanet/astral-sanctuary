@@ -19,7 +19,6 @@ import AdminPanel from './components/AdminPanel';
 import MoonPhaseWidget from './components/MoonPhaseWidget';
 import PlanetaryTicker from './components/PlanetaryTicker';
 import ParticleBackground from './components/ParticleBackground';
-import AdsterraAd from './components/AdsterraAds';
 import Footer from './components/Footer';
 
 function App() {
@@ -86,21 +85,6 @@ function App() {
 
         <MoonPhaseWidget />
 
-        {/* Top Banner Ad - 728x90 */}
-        <div style={{
-          position: 'sticky',
-          top: '70px',
-          zIndex: 900,
-          background: 'rgba(13, 13, 15, 0.95)',
-          padding: '10px 0',
-          borderBottom: '1px solid var(--purple-lavender)',
-          display: 'flex',
-          justifyContent: 'center'
-        }}>
-          <AdsterraAd type="banner728x90" style={{ margin: 0, background: 'transparent', border: 'none' }} />
-        </div>
-
-
         {/* Main Content - Normal layout */}
         <div style={{ position: 'relative' }}>
           <AnimatePresence mode="wait">
@@ -118,17 +102,6 @@ function App() {
               <Route path="/admin" element={<AdminPanel />} />
             </Routes>
           </AnimatePresence>
-
-          {/* Bottom Ad - Single horizontal ad */}
-          <div style={{
-            display: 'flex',
-            justifyContent: 'center',
-            marginTop: '3rem',
-            marginBottom: '2rem'
-          }}>
-            {/* Horizontal 4x1 ad */}
-            <AdsterraAd type="inPagePush" style={{ margin: 0 }} />
-          </div>
         </div>
 
         <Footer />
