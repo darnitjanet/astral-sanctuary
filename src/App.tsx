@@ -13,11 +13,14 @@ import JournalPage from './pages/JournalPage';
 import LearnPage from './pages/LearnPage';
 import BlogPage from './pages/BlogPage';
 import BlogPostPage from './pages/BlogPostPage';
+import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
+import TermsOfServicePage from './pages/TermsOfServicePage';
 import AdminPanel from './components/AdminPanel';
 import MoonPhaseWidget from './components/MoonPhaseWidget';
 import PlanetaryTicker from './components/PlanetaryTicker';
 import ParticleBackground from './components/ParticleBackground';
 import AdsterraAd from './components/AdsterraAds';
+import Footer from './components/Footer';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -110,6 +113,8 @@ function App() {
               <Route path="/learn" element={<LearnPage />} />
               <Route path="/blog" element={<BlogPage />} />
               <Route path="/blog/:slug" element={<BlogPostPage />} />
+              <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
+              <Route path="/terms-of-service" element={<TermsOfServicePage />} />
               <Route path="/admin" element={<AdminPanel />} />
             </Routes>
           </AnimatePresence>
@@ -126,6 +131,7 @@ function App() {
           </div>
         </div>
 
+        <Footer />
         <PlanetaryTicker />
         </div>
       </Router>
