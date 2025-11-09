@@ -2787,7 +2787,7 @@ Explore our [Daily Cosmos page](/daily-cosmos) to track October's moon phases, o
     slug: 'november-spiritual-practices-gratitude-beaver-moon',
     title: 'November Spiritual Practices: Gratitude Magic & Beaver Moon Rituals',
     metaDescription: 'Discover powerful November spiritual practices, Beaver Moon rituals, and gratitude magic. Complete guide to November 2025 full moon, grounding practices, and harvest blessings.',
-    excerpt: 'November brings the Beaver Moon and the season of deep gratitude. Learn transformative spiritual practices for grounding, abundance, and preparing for winter's introspection.',
+    excerpt: "November brings the Beaver Moon and the season of deep gratitude. Learn transformative spiritual practices for grounding, abundance, and preparing for winter's introspection.",
     author: 'Astral Sanctuary',
     publishDate: '2025-11-09',
     lastModified: '2025-11-09',
@@ -3980,12 +3980,12 @@ This isn't surface-level tarot. This is the depths.
 ### 1. Shadow Integration Spread (8 Cards)
 
 **Layout:**
-```
+\`\`\`
         8
     7   1   2
     6   5   3
         4
-```
+\`\`\`
 
 **Positions:**
 1. **Center/Conscious Self:** Who I show the world
@@ -4009,11 +4009,11 @@ This isn't surface-level tarot. This is the depths.
 ### 2. Death & Rebirth Spread (9 Cards)
 
 **Layout:**
-```
+\`\`\`
     1   2   3
     4   5   6
     7   8   9
-```
+\`\`\`
 
 **Top Row - DEATH (What Must Die):**
 1. **Belief to release:** Old thought pattern
@@ -4056,11 +4056,11 @@ Scorpio rules power—where you have it, where you give it away, where you misus
 Scorpio uncovers what's hidden.
 
 **Layout:**
-```
+\`\`\`
       5
    2  1  3
       4
-```
+\`\`\`
 
 **Positions:**
 1. **The surface:** What appears true
@@ -4708,11 +4708,11 @@ Beyond turkey and football, Thanksgiving offers profound spiritual opportunities
 
 **Gratitude Blessing Reading (7 cards):**
 
-```
+\`\`\`
       7
    2  1  3
 4  5  6
-```
+\`\`\`
 
 1. **Center/Heart:** Core blessing
 2. **Above:** Spiritual gift
@@ -4930,7 +4930,7 @@ Deepen your practice with a [Thanksgiving gratitude tarot reading](/tarot), or e
     slug: 'november-tarot-spreads-2025',
     title: 'November Tarot Spreads 2025: Gratitude, Release & Winter Preparation',
     metaDescription: 'Powerful November 2025 tarot spreads for gratitude, shadow work, Beaver Moon, Thanksgiving, and winter preparation. Complete guide with layouts and interpretation tips.',
-    excerpt: 'Master November tarot with specialized spreads for the Beaver Moon, Thanksgiving gratitude, Mercury Retrograde shadow work, and preparing for winter's introspection.',
+    excerpt: "Master November tarot with specialized spreads for the Beaver Moon, Thanksgiving gratitude, Mercury Retrograde shadow work, and preparing for winter's introspection.",
     author: 'Astral Sanctuary',
     publishDate: '2025-11-26',
     lastModified: '2025-11-26',
@@ -4977,13 +4977,13 @@ This comprehensive guide offers specialized tarot spreads for every aspect of No
 **Use at month's beginning for overview:**
 
 **Layout:**
-```
+\`\`\`
        12
     11  1  2
  10  9  3  4
     8   7  6
         5
-```
+\`\`\`
 
 **Positions:**
 1. **November's Overall Energy**
@@ -5006,11 +5006,11 @@ This comprehensive guide offers specialized tarot spreads for every aspect of No
 **For Full Moon November 5th, 2025:**
 
 **Layout:**
-```
+\`\`\`
       7
    2  1  3
    4  5  6
-```
+\`\`\`
 
 **Positions:**
 1. **Center/What I've Built:** Acknowledging your work
@@ -5040,13 +5040,13 @@ This comprehensive guide offers specialized tarot spreads for every aspect of No
 **Perform Thanksgiving morning or day before:**
 
 **Layout:**
-```
+\`\`\`
       9
    7  8
 3  1  2
    4  5
       6
-```
+\`\`\`
 
 **Positions:**
 1. **Heart:** Core blessing
@@ -5078,12 +5078,12 @@ This comprehensive guide offers specialized tarot spreads for every aspect of No
 **For November 9-29 retrograde:**
 
 **Layout (Mirror Image):**
-```
+\`\`\`
 1   5   9
 2   6  10
 3   7
 4   8
-```
+\`\`\`
 
 **Left Side - SHADOW (1-4):**
 1. What I'm hiding from myself
@@ -5111,11 +5111,11 @@ This comprehensive guide offers specialized tarot spreads for every aspect of No
 **Simple daily or weekly practice:**
 
 **Layout:**
-```
+\`\`\`
     5
   2 1 3
     4
-```
+\`\`\`
 
 **Positions:**
 1. **Obvious Blessing:** What you already appreciate
@@ -5135,12 +5135,12 @@ This comprehensive guide offers specialized tarot spreads for every aspect of No
 **Late November preparation:**
 
 **Layout (Seed in Earth):**
-```
+\`\`\`
       8
    7  1  2
    6  5  3
       4
-```
+\`\`\`
 
 **Positions:**
 1. **Seed/Essence:** Your core entering winter
@@ -5159,14 +5159,14 @@ This comprehensive guide offers specialized tarot spreads for every aspect of No
 **For what's ready to be released:**
 
 **Layout (Falling Leaves):**
-```
+\`\`\`
 1
   2
 3
   4
     5
       6
-```
+\`\`\`
 
 **Positions:**
 1. **First to Fall:** Most obvious release
@@ -5187,10 +5187,10 @@ This comprehensive guide offers specialized tarot spreads for every aspect of No
 **Before Thanksgiving gathering:**
 
 **Layout (Family Table):**
-```
+\`\`\`
    2  3  4
 1  5  6  7
-```
+\`\`\`
 
 **Positions:**
 1. **You:** Your energy
