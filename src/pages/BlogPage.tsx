@@ -7,6 +7,10 @@ import SEO from '../components/SEO';
 const BlogPage: React.FC = () => {
   const navigate = useNavigate();
 
+  // Filter to only show posts with dates in the past or today
+  const today = new Date();
+  const publishedPosts = blogPosts.filter(post => new Date(post.publishDate) <= today);
+
   return (
     <>
       <SEO
@@ -33,7 +37,7 @@ const BlogPage: React.FC = () => {
           gap: '2rem',
           marginTop: '3rem'
         }}>
-          {blogPosts.map((post) => (
+          {publishedPosts.map((post) => (
             <motion.article
               key={post.id}
               initial={{ opacity: 0, y: 20 }}
