@@ -5917,6 +5917,286 @@ May your season be filled with magic, wonder, and the eternal return of light.
 
 The wheel turns. The light returns. And so do you. ✨
     `
+  },
+  {
+    id: '15',
+    slug: 'january-wolf-moon-2026-new-year-intentions',
+    title: 'January Wolf Moon 2026: New Year Intentions & Lunar Magic',
+    metaDescription: 'Harness the powerful Wolf Moon energy of January 2026 for manifestation and intention setting. Discover tarot spreads, rituals, and crystal work for the new year.',
+    excerpt: 'The Wolf Moon rises in January, calling us to set powerful intentions for 2026. Learn rituals, tarot spreads, and practices to harness this potent lunar energy.',
+    author: 'Astral Sanctuary',
+    publishDate: '2026-01-17',
+    lastModified: '2026-01-17',
+    category: 'Seasonal Magic',
+    tags: ['wolf moon', 'january 2026', 'new year intentions', 'full moon rituals', 'manifestation', 'lunar magic', 'tarot spreads'],
+    readTime: '14 min read',
+    content: `
+# January Wolf Moon 2026: New Year Intentions & Lunar Magic
+
+As the new year unfolds, the first full moon of 2026 has risen—the **Wolf Moon**. Named by Native American tribes for the wolves that howled hungrily outside villages during the cold January nights, this moon carries powerful energy for new beginnings, survival instincts, and calling in what sustains us. Even if you missed the exact full moon moment, its energy remains potent throughout the week.
+
+## Understanding the Wolf Moon (January 13, 2026)
+
+### Astronomical Details
+
+**Wolf Moon 2026:**
+- **Date:** Monday, January 13, 2026
+- **Time:** 5:27 PM EST
+- **Sign:** Cancer (emotional, nurturing, intuitive)
+- **Element:** Water
+
+### Why "Wolf Moon"?
+
+The Wolf Moon's name connects to:
+- **Pack mentality** - community, family, belonging
+- **Survival instincts** - knowing what you need to thrive
+- **The howl** - speaking your truth, calling out for what you desire
+- **Winter perseverance** - enduring challenges with strength
+
+### Spiritual Significance
+
+The first full moon of the calendar year carries unique energy:
+- **Fresh start amplified** - lunar light illuminating new paths
+- **Completion of holiday cycle** - releasing what the season brought
+- **Grounding intentions** - making new year goals tangible
+- **Ancestral wisdom** - connecting with those who survived winter before us
+
+## The Cosmic Landscape of January 2026
+
+### Capricorn Season (Until January 19)
+
+We begin the month in practical, ambitious Capricorn:
+- **Focus:** Building, structuring, committing
+- **Energy:** Disciplined manifestation
+- **Challenge:** Balancing ambition with self-care
+- **Opportunity:** Laying foundations that last
+
+### Aquarius Season Begins (January 19)
+
+Mid-month brings the Water Bearer's revolutionary energy:
+- **Focus:** Innovation, community, humanitarian vision
+- **Energy:** Progressive, unconventional thinking
+- **Challenge:** Staying grounded while dreaming big
+- **Opportunity:** Connecting your goals to collective good
+
+### Wolf Moon in Cancer
+
+With the Wolf Moon in Cancer, expect heightened:
+- **Emotional sensitivity** - feelings running deep
+- **Intuitive insights** - trust your gut
+- **Home and family focus** - nesting, nurturing, belonging
+- **Nurturing your intentions** - tending goals like you would a child
+
+## Wolf Moon Rituals for New Year Intentions
+
+### Ritual 1: The Howl of Truth
+
+**Purpose:** Speaking your deepest desires into existence
+
+**You'll need:**
+- A candle (white or silver)
+- Paper and pen
+- Open window or outdoor space
+
+**Steps:**
+1. Light your candle at moonrise
+2. Write down your three deepest desires for 2026
+3. Read each one aloud, letting your voice carry like a wolf's howl
+4. Feel the vibration of your voice claiming these intentions
+5. Place the paper under moonlight overnight
+6. Keep it somewhere sacred for the year
+
+### Ritual 2: Pack Circle Ceremony
+
+**Purpose:** Calling in your supportive community
+
+**You'll need:**
+- Photos or names of people who support you
+- A circle of small stones or crystals
+- A white candle in the center
+
+**Steps:**
+1. Create your stone circle
+2. Place the candle in the center, representing your light
+3. Arrange the photos/names around the circle
+4. Light the candle and say: "I call in my pack—those who support my journey, celebrate my growth, and howl with me toward our dreams."
+5. Visualize each person's energy strengthening yours
+6. Thank them and let the candle burn safely
+
+### Ritual 3: Winter Survival Intention Jar
+
+**Purpose:** Creating a tangible anchor for year-long manifestation
+
+**You'll need:**
+- A small jar with lid
+- Paper strips for writing intentions
+- Herbs: rosemary (remembrance), bay leaf (wishes), cinnamon (success)
+- A small crystal: clear quartz (amplification) or citrine (manifestation)
+
+**Steps:**
+1. Write each 2026 intention on a separate paper strip
+2. Roll them up and place in jar
+3. Add herbs and crystal
+4. Seal under the Wolf Moon light
+5. Keep on your altar or sacred space all year
+6. Open at next January's Wolf Moon to review
+
+## Wolf Moon Tarot Spread: New Year Guidance
+
+Shuffle your deck while focusing on your year ahead. Pull cards for these positions:
+
+| Position | Meaning |
+|----------|---------|
+| 1. The Wolf | Your guiding energy for 2026 |
+| 2. The Pack | Community support available to you |
+| 3. The Hunt | What you're pursuing this year |
+| 4. The Howl | Your message to speak/share with the world |
+| 5. The Den | What nurtures and sustains you |
+| 6. Winter's Wisdom | Lesson from challenges ahead |
+| 7. The Moon's Gift | Blessing the universe offers you |
+
+### Sample Interpretation:
+
+**Position 1 (The Wolf):** The Emperor
+*Your year calls for confident leadership and structured ambition. Step into authority over your own life.*
+
+**Position 5 (The Den):** The Empress
+*Nature, creativity, and abundance are your sanctuary. Create spaces that feel nurturing and beautiful.*
+
+Get your personalized spread with our [Tarot Reading](/tarot) tool.
+
+## Crystals for Wolf Moon Energy
+
+### Moonstone
+- **Properties:** Lunar connection, intuition, new beginnings
+- **Use:** Hold during meditation, place on third eye
+- **January benefit:** Amplifies intention-setting power
+
+### Black Obsidian
+- **Properties:** Protection, grounding, truth-revealing
+- **Use:** Carry for protection, scry for insights
+- **January benefit:** Cuts through illusion about what you truly want
+
+### Clear Quartz
+- **Properties:** Amplification, clarity, programming
+- **Use:** Program with intentions, amplify other crystals
+- **January benefit:** Magnifies new year goal energy
+
+### Garnet
+- **Properties:** Vitality, passion, survival energy
+- **Use:** Wear as jewelry, meditate with for motivation
+- **January benefit:** Wolf Moon energy for perseverance
+
+### Labradorite
+- **Properties:** Transformation, magic, protection
+- **Use:** Gateway to intuition and higher realms
+- **January benefit:** Illuminates paths forward in the new year
+
+## Journaling Prompts for the Wolf Moon
+
+Spend time under the moon (or by a window facing it) with these reflection questions:
+
+1. **What am I hungry for in 2026?** What do I truly need to thrive?
+
+2. **Who is in my pack?** Who supports me unconditionally, and who drains my energy?
+
+3. **What truth am I ready to howl?** What message or authentic self-expression have I been holding back?
+
+4. **What survival skills did 2025 teach me?** How am I stronger now?
+
+5. **What does my den need?** How can I make my home/inner world more nurturing?
+
+6. **If I were a wolf, what territory would I claim?** What space in the world is meant for me?
+
+## New Year Intention-Setting Best Practices
+
+### The Difference Between Resolutions and Intentions
+
+| Resolutions | Intentions |
+|-------------|------------|
+| Specific, rigid goals | Energetic directions |
+| Pass/fail mentality | Ongoing practice |
+| External focus | Internal transformation |
+| Often abandoned | Continuously returned to |
+
+### Setting Moon-Aligned Intentions
+
+**1. Feel, Don't Just Think**
+Wolf Moon in Cancer asks you to *feel* into your desires. What makes your heart expand? What creates warmth in your chest?
+
+**2. Use Present Tense**
+Instead of "I will be healthy," try "I am nurturing my body with care and attention."
+
+**3. Start Small, Dream Big**
+Set intentions that have immediate daily applications AND long-term vision.
+
+**4. Connect to Your Why**
+Each intention should link to your deepest values. Why does this matter to your soul?
+
+**5. Create Accountability**
+Share with your pack. The Wolf Moon honors community—let others witness your intentions.
+
+## Working with the Wolf Moon All Month
+
+### Week 1 (January 1-6): Preparation
+- Clear your space and altar
+- Reflect on what you're releasing from 2025
+- Begin journaling about new year desires
+
+### Week 2 (January 7-13): Wolf Moon Week
+- Perform your chosen rituals
+- Pull your tarot spread
+- Set formal intentions under the full moon
+- Connect with your supportive community
+
+### Week 3 (January 14-20): Integration ← *We are here*
+- Take first action steps on intentions
+- Notice what intuitions arise
+- The rituals above still work—Wolf Moon energy lingers
+- Prepare for Aquarius season shift (January 19)
+
+### Week 4 (January 21-31): Momentum
+- Build consistent daily practices
+- Allow intentions to evolve naturally
+- New Moon (January 29) for planting seeds
+
+## Affirmations for Wolf Moon Energy
+
+Speak these under the full moon or throughout January:
+
+> *"Like the wolf, I trust my instincts. I know what I need to survive and thrive."*
+
+> *"I call in my pack—those who support my growth and celebrate my truth."*
+
+> *"I am not afraid to howl my desires into the universe. I am heard. I am answered."*
+
+> *"The first moon of the year illuminates my path. I walk it with courage."*
+
+> *"I nurture my intentions like the mother wolf nurtures her pups—with fierce love and protection."*
+
+## The Wolf Moon's Message
+
+January's Wolf Moon reminds us that even in the coldest, darkest time, we are not alone. The pack survives together. The howl reaches across the frozen landscape to find its answer.
+
+Your intentions for 2026 are seeds planted in winter soil. They don't need to bloom immediately—they need protection, patience, and the faith that spring always returns.
+
+**What are you hungry for this year?**
+**What pack do you run with?**
+**What truth is ready to be howled into existence?**
+
+Let the Wolf Moon illuminate your answers.
+
+---
+
+## Continue Your Journey
+
+- **Daily guidance:** Check [Daily Cosmos](/daily-cosmos) for current planetary energies
+- **Pull cards:** Get your personal [Tarot Reading](/tarot)
+- **Explore your chart:** Use our [Birth Chart Calculator](/birth-chart)
+- **Learn more:** Discover crystal meanings in our [Learn section](/learn)
+
+The wolf howls. The moon rises. And your 2026 begins. 🐺🌕
+    `
   }
 ];
 
