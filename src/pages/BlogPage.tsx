@@ -7,9 +7,11 @@ import SEO from '../components/SEO';
 const BlogPage: React.FC = () => {
   const navigate = useNavigate();
 
-  // Filter to only show posts with dates in the past or today
+  // Filter to only show posts with dates in the past or today, sorted newest first
   const today = new Date();
-  const publishedPosts = blogPosts.filter(post => new Date(post.publishDate) <= today);
+  const publishedPosts = blogPosts
+    .filter(post => new Date(post.publishDate) <= today)
+    .sort((a, b) => new Date(b.publishDate).getTime() - new Date(a.publishDate).getTime());
 
   return (
     <>
@@ -37,12 +39,12 @@ const BlogPage: React.FC = () => {
           gap: '2rem',
           marginTop: '3rem'
         }}>
-          {publishedPosts.map((post) => (
+          {publishedPosts.map((post, index) => (
             <motion.article
               key={post.id}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.1 * parseInt(post.id) }}
+              transition={{ delay: 0.1 * index }}
               onClick={() => navigate(`/blog/${post.slug}`)}
               style={{
                 background: 'rgba(26, 26, 29, 0.8)',

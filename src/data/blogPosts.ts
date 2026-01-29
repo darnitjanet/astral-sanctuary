@@ -6197,6 +6197,92 @@ Let the Wolf Moon illuminate your answers.
 
 The wolf howls. The moon rises. And your 2026 begins. 🐺🌕
     `
+  },
+  {
+    id: '16',
+    slug: 'organizing-spiritual-practice-business-notion',
+    title: 'Organizing Your Spiritual Practice (and Business) with Notion',
+    metaDescription: 'Discover Notion templates designed for tarot practitioners and spiritual entrepreneurs. Track readings, study cards, manage clients, and organize your sacred business.',
+    excerpt: 'Two Notion templates designed specifically for spiritual practitioners: one for personal tarot journaling and one for running your spiritual business.',
+    author: 'Astral Sanctuary',
+    publishDate: '2026-01-29',
+    lastModified: '2026-01-29',
+    category: 'Tools & Resources',
+    tags: ['notion', 'tarot journal', 'spiritual business', 'organization', 'productivity', 'tarot practice'],
+    readTime: '5 min read',
+    content: `
+# Organizing Your Spiritual Practice (and Business) with Notion
+
+If you've ever lost track of a meaningful reading, forgotten which spreads work best for certain questions, or struggled to keep your spiritual business running smoothly, you're not alone.
+
+I spent years with scattered notebooks, random notes on my phone, and a vague sense that I should be tracking things better. When I finally sat down to build a system that actually worked, I realized other practitioners might need the same thing.
+
+That's how I ended up creating two Notion templates designed specifically for people like us.
+
+---
+
+## For Your Personal Practice: Astral Companion
+
+**Astral Companion** is a tarot journaling system that helps you track your readings, study the cards, and notice patterns over time.
+
+It includes:
+- A full **78-card library** with meanings and keywords
+- A **reading journal** where you can log spreads and interpretations
+- A **spread library** so you never forget that perfect layout you found months ago
+
+What I love most is being able to look back and see how certain cards show up for me repeatedly, or how my interpretations have deepened over time. It turns tarot from something you *do* into something you *learn from*.
+
+This one is for anyone who wants to build a more intentional relationship with their deck.
+
+**[Get Astral Companion →](https://valley-bandana-182.notion.site/Astral-Companion-2eb480cba431804282a5e26618eb0a42)**
+
+---
+
+## For Your Spiritual Business: Sacred Business Suite
+
+If you've turned your gifts into a business, you know how quickly things get complicated. Clients to track, sessions to schedule, income and expenses to manage, offerings to organize.
+
+**Sacred Business Suite** brings all of that into one place. It includes databases for:
+- **Clients** and their session history
+- **Services** and offerings
+- **Bookings** and scheduling
+- **Finances** (income and expenses)
+- **Testimonials** for social proof
+
+Everything connects, so you can see which offerings bring in the most income, which clients are due for follow-up, and whether your business is actually profitable.
+
+I built this because I needed it myself. Spreadsheets felt cold and disconnected from the work. This feels like a system that honors both the spiritual and practical sides of running a business.
+
+**[Get Sacred Business Suite →](https://valley-bandana-182.notion.site/Sacred-Business-Suite-2ee480cba43180458796da565266ed22)**
+
+---
+
+## Why Notion?
+
+Notion is **free to use** and works on any device. Once you purchase a template, it's yours forever—no monthly fees. You can customize it however you want as your practice or business evolves.
+
+If you've never used Notion before, don't worry. Both templates include a **Getting Started guide** that walks you through everything.
+
+---
+
+## Ready to Get Organized?
+
+- **Astral Companion** is available for **$15**
+- **Sacred Business Suite** is available for **$35**
+
+Both templates are designed to grow with you, whether you're just starting your tarot journey or running a full spiritual practice.
+
+If you have questions about either template, feel free to reach out. I'd love to hear how you're using them.
+
+---
+
+## Continue Your Journey
+
+- **Daily guidance:** Check [Daily Cosmos](/daily-cosmos) for planetary energies
+- **Pull cards:** Get your personal [Tarot Reading](/tarot)
+- **Explore your chart:** Use our [Birth Chart Calculator](/birth-chart)
+- **Learn more:** Visit our [Learn section](/learn) for deeper studies
+    `
   }
 ];
 
